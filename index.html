@@ -4,10 +4,11 @@
   <meta charset="Utf-8">
   <meta http-equiv="X-UA-Compatible" content = "IE=edge"
   <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
-  <link rel = "stylesheet" href = "style.css">
-  <link rel = "stylesheet" href = "swiper-bundle.min.css">
+  <!-- Swiper CSS -->
+        <link rel="stylesheet" href="swiper-bundle.min.css">
+  <!-- CSS -->
+        <link rel="stylesheet" href="style.css">
   <title>Amazon</title>
-
 </head>
 <body>
 
@@ -64,30 +65,67 @@
 
   <section id = "stronatrzecia">
     <div class = "thirdpage">
-      <div class = "slide-container">
-        <div class = "slide-content">
-          <div class = "card-wrapper">
-            <div class = "card">
-              <div class = "image-content">
-                <span class = "overlay"></span>
-                <div class = "card-image">
-                    <img src = "media/1.png" alt="" class = "card-img">
-                </div>
-              </div>
+      <div class="slide-container swiper">
+        <h1>Our Bestsellers</h1>
+             <div class="slide-content">
+                 <div class="card-wrapper swiper-wrapper">
+  <!-- First card --->
+                     <div class="card swiper-slide">
+                         <div class="image-content">
+                             <span class="overlay"></span>
 
-              <div class = "card-content">
-                <h2 class = "name"> First Book</h2>
-                <p class = "description"> Siemano Tu jest opis książkiqweqweqwwqewqewq Witam wszystkich bardzo ale to bardzo bardzo s</p2>
-                <button class = "button"> View more </button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+                             <div class="card-image">
+                                 <img src="Media/1.png" alt="" class="card-img">
+                             </div>
+                         </div>
+
+                         <div class="card-content">
+                             <h2 class="name">Solar System Coloring Book</h2>
+                             <p class="description">Educational Coloring Book with Interesting Facts about Space for Kids.There is nothing better than fun combined with learning. While coloring planets, space shuttles, telescopes and lunar rovers, your child will learn about their structure, colors and shapes.</p>
+                             <a href="https://www.amazon.com/gp/product/B08W4JRMJK/ref=dbs_a_def_rwt_hsch_vapi_taft_p1_i1"><button class="button">View More</button></a>
+                         </div>
+                     </div>
+  <!-- Second card --->
+                     <div class="card swiper-slide">
+                         <div class="image-content">
+                             <span class="overlay"></span>
+
+                             <div class="card-image">
+                                 <img src="Media/2.png" alt="" class="card-img">
+                             </div>
+                         </div>
+
+                         <div class="card-content">
+                             <h2 class="name">Countries of the World Book</h2>
+                             <p class="description">Educational Map Coloring Book with Interesting Facts about Geography and Cultures for Kids. While coloring Indian elephants, ancient pyramids or delicious Argentinian empanadas your child will learn about their size, structure and appearance.</p>
+                             <a href="https://www.amazon.com/gp/product/B094GZ8QK6/ref=dbs_a_def_rwt_hsch_vapi_taft_p1_i0"><button class="button">View More</button></a>
+                         </div>
+                     </div>
+  <!-- Third card --->
+                     <div class="card swiper-slide">
+                         <div class="image-content">
+                             <span class="overlay"></span>
+
+                             <div class="card-image">
+                                 <img src="Media/3.png" alt="" class="card-img">
+                             </div>
+                         </div>
+
+                         <div class="card-content">
+                             <h2 class="name">Dinosaur Coloring Book</h2>
+                             <p class="description">Educational Coloring Book with Interesting Facts about Prehistoric Creatures for Kids. While coloring dinosaurs such as Triceratops, Tyrannosaurus or Stegosaurus, your child will learn about their body structure, habits and diet.</p>
+                            <a href="https://www.amazon.com/gp/product/B09CRQNWFW/ref=dbs_a_def_rwt_hsch_vapi_taft_p1_i2"><button class="button">View More</button></a>
+                         </div>
+                     </div>
+                 </div>
+             </div>
+             <div class="swiper-button-next swiper-navBtn"></div>
+             <div class="swiper-button-prev swiper-navBtn"></div>
+             <div class="swiper-pagination"></div>
+         </div>
     </div>
   </section>
-
 </body>
-
 <script src="swiper-bundle.min.js"></script>
+<script src="index.js"></script>
 </html>

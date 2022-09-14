@@ -1,22 +1,30 @@
-const header = document.querySelector("header");
-const sectionone = document.querySelector("first-page")
 
-const sectionOneOptions = {
-  rootMargin: "-200px 0px 0px 0px"
-};
+var swiper = new Swiper(".slide-content", {
+   slidesPerView: 3,
+   spaceBetween: 25,
+   loop: true,
+   centerSlide: 'true',
+   fade: 'true',
+   grabCursor: 'true',
+   pagination: {
+     el: ".swiper-pagination",
+     clickable: true,
+     dynamicBullets: true,
+   },
+   navigation: {
+     nextEl: ".swiper-button-next",
+     prevEl: ".swiper-button-prev",
+   },
 
-const sectionOneObserver = new IntersectionObserver
-(function(
-  entries, sectionOneObserver
-) {
-
-  entries.forEach(entry => {
-    if( !entry.isIntersecting){
-      header.classList.add("nav-scrolled");
-    } else {
-      header.classList.remove("nav-scrolled");
-    }
-  });
-}, sectionOneOptions);
-
-sectionOneObserver.observe(sectionone);
+   breakpoints:{
+       0: {
+           slidesPerView: 1,
+       },
+       520: {
+           slidesPerView: 2,
+       },
+       950: {
+           slidesPerView: 3,
+       },
+   },
+ });
