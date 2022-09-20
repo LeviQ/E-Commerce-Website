@@ -341,3 +341,43 @@ nav ul li a:hover:after{
   justify-content: center;
   background-color: #EFEFEF;
 }
+
+form{
+  display: flex;
+  flex-direction: column;
+  background:#FFFF;
+  padding: 2vw 4vw;
+  width: 100%;
+  max-width: 800px;
+  border-radius: 10px;
+  margin-bottom: -120px;
+  border: 1px black solid;
+}
+
+form h3{
+  color: #555;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+
+form input, form textarea{
+  border: 0;
+  margin: 10px 0;
+  padding: 20px;
+  outline: none;
+  font-size: 16px;
+  background: #EFEFEF;
+}
+
+form button{
+  padding: 15px;
+  background: #4070F4;
+  color: #FFFF;
+  font-size: 18px;
+  border: 0;
+  cursor: pointer;
+  outline: none;
+  width: 300px;
+  margin: 20px auto 0;
+  border-radius: 30px;
+}

@@ -132,12 +132,24 @@
   <!-- Fourth Page --->
 
   <section id = "stronaczwarta">
-  <div class = "fourthpage"></div>
+    <div class = "fourthpage">
+      <div class = "container">
+        <form data-aos="fade-up" data-aos-duration="1500">
+          <h3>We'd love to Hear from you</h3>
+          <input type = "text" id="name" placeholder="Your Name" required>
+          <input type = "email" id="email" placeholder="Email" required>
+          <input type = "tel" id="phone" placeholder="Phone Number" required>
+          <textarea id = "message" rows = "4" placeholder="Help me understand how I can help you?" required></textarea>
+          <button type="submit">Send Message</button>
+      </div>
+    </div>
   </section>
 
 </body>
+<!-- Swiper Js -->
 <script src="swiper-bundle.min.js"></script>
 <script src="index.js"></script>
+<!-- AOS -->
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
   AOS.init();
