@@ -32,11 +32,12 @@
   position: sticky;
   padding: 20px 5%;
   box-shadow: 0 0 14px rgba(0, 0, 0, 0.4);
-  background:linear-gradient(to bottom, rgba(245,193,64,96), rgba(255, 122, 89,0));
+  background: linear-gradient(to bottom, rgba(245,193,64,96), rgba(255, 122, 89,0));
 }
 
 header {
   position: fixed;
+  z-index: 1000;
   width: 100%;
   top: 0;
   left: 0;
@@ -85,6 +86,94 @@ nav ul li a:after{
 nav ul li a:hover:after{
   -webkit-transform:translateX(-50%) scaleX(1);
   transform:translateX(-50%) scaleX(1);
+}
+
+.hamburger{
+  display: none;
+  cursor: pointer;
+}
+
+.bar{
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px 0;
+  transition: all 0.3s ease;
+  background-color: #FFFF;
+}
+
+@media(max-width:1600px){
+  .nawigacja{
+    width: 100%;
+  }
+}
+
+@media(max-width:1024px){
+  .hamburger{
+    display: block;
+  }
+
+  .hamburger.active .bar:nth-child(2){
+    opacity: 0;
+  }
+
+  .hamburger.active .bar:nth-child(1){
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .hamburger.active .bar:nth-child(3){
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  .menu{
+    position: fixed;
+    left: -100%;
+    top: 70px;
+    gap: 0;
+    flex-direction: column;
+    background: rgba(245,193,64,96);
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+  }
+
+  .item{
+    margin: 16px 0;
+  }
+
+  .menu.active{
+    left: 0;
+    top: 0;
+  }
+
+  .content .title{
+    font-size: 60px;
+    color: #FFFF;
+    font-weight: 600;
+    left: 10%;
+    top:80%;
+  }
+
+  .content .AboutS{
+    display: flex;
+    justify-content: center;
+    left: 33%;
+  }
+
+  .main .About-img{
+    position: absolute;
+    justify-content: center;
+    left: 16%;
+    top: 123vh;
+  }
+
+  .main .About-text{
+    position: absolute;
+    justify-content: center;
+    left: 16%;
+    top: 161vh;
+    text-align: center;
+  }
 }
 
 .home video{
@@ -359,6 +448,9 @@ form h3{
   color: #555;
   font-weight: 800;
   margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 form input, form textarea{
@@ -372,6 +464,9 @@ form input, form textarea{
 
 form textarea{
   max-width: 300px;
+  min-width: 300px;
+  max-height: 130px;
+  min-height: 130px;
 }
 
 form button{

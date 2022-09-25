@@ -1,4 +1,3 @@
-
 var swiper = new Swiper(".slide-content", {
    slidesPerView: 3,
    spaceBetween: 25,
@@ -28,3 +27,17 @@ var swiper = new Swiper(".slide-content", {
        },
    },
  });
+
+const hamburger = document.querySelector(".hamburger");
+const menu = document.querySelector(".menu");
+
+hamburger.addEventListener("click", () => {
+  hamburger.classList.toggle("active");
+  menu.classList.toggle("active");
+})
+
+document.querySelectorAll(".link").forEach(n => n.
+addEventListener("click", () => {
+  hamburger.classList.remove("active");
+  menu.classList.remove("active");
+}))
